@@ -1,0 +1,16 @@
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trading File System</title>
+    <link rel="stylesheet" href="{% static 'CSS/homepage.css' %}">
+</head>
+<body>
+    <label for="csv_file" class="file_uploader">upload csv file here</label>
+    <input type="file" id="csv_file" name="csv_file" hidden>
+    <p id="file_info"></p>
+    <p id="message"></p>
+    <div id="download"></div>
+    <script src="{% static 'JS/homepage.js' %}"></script>
+</body>
+</html>
